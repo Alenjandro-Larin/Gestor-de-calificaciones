@@ -4,8 +4,10 @@
 
 class Cuatrimestre1{
     private:
-        std::string materia;
+        std::vector<std::string> arrayDeMaterias;
         int nota;
     public:
         int promedio;
-} 
+        void SetMaterias(std::string, std::string, std::string, std::string, std::string);
+        std::vector<std::string> GetMaterias();
+}; 
