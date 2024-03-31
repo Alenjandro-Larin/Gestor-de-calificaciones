@@ -68,9 +68,7 @@ void MostrarNotas(Cuatrimestre1 *gestor){
 
 void IngresarNotas(Cuatrimestre1 *gestor){
     gestor->SetNotas();
-    notas[0] = gestor->GetNota(0);
-    notas[1] = gestor->GetNota(1);
-    notas[2] = gestor->GetNota(2);
-    notas[3] = gestor->GetNota(3);
-    notas[4] = gestor->GetNota(4);
+    for (int i = 0; i < 5; i++) {
+        notas[i] = gestor->GetNota(i);
+    }
 }
