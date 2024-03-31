@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <cmath>
 #include "Gestor_de_Calificaciones.h"
 
 void MostrarNotas(Cuatrimestre1 *gestor);
@@ -41,14 +40,13 @@ int main(){
                 break;
             }
 
-                // Preguntar al usuario si desea regresar al menú principal
         if (change != 3) {
             char backChoice;
             std::cout << "" << std::endl;
             std::cout << "Desea volver al menu principal (S/N): ";
             std::cin >> backChoice;
             if (backChoice != 'S' && backChoice != 's') {
-                change = 3; // Salir del bucle si no desea volver al menú
+                change = 3; 
             }
         }
 
