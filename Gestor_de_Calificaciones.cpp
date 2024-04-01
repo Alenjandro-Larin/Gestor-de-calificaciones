@@ -7,6 +7,10 @@ float Cuatrimestre1::GetNota(int pos){
     return nota[pos];
 }
 
+float Cuatrimestre1::GetPromedio(){
+    return promedio;
+}
+
 void Cuatrimestre1::SetNotas(){
     float pNota1; float pNota2; float pNota3; float pNota4; float pNota5;
 
@@ -26,6 +30,10 @@ void Cuatrimestre1::SetNotas(){
     nota[2] = pNota3;
     nota[3] = pNota4;
     nota[4] = pNota5;
+}
+
+void Cuatrimestre1::SetPromedio(){
+    promedio = (nota[0] + nota[1] + nota[2] + nota[3] + nota[4])/5;
 }
 
 void Cuatrimestre1::SetMaterias(std::string materia1, std::string materia2, std::string materia3, std::string materia4, std::string materia5){

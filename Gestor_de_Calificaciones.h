@@ -9,10 +9,12 @@ class Cuatrimestre1{
         std::vector<std::string> arrayDeMaterias;
         std::string materia;
         float nota[4];
-        int promedio;
+        float promedio;
     public:
         float GetNota(int);
+        float GetPromedio();
         void SetNotas();
+        void SetPromedio();
         void SetMaterias(std::string, std::string, std::string, std::string, std::string);
         std::vector<std::string> GetMaterias();
 }; 

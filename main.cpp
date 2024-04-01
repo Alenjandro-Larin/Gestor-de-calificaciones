@@ -3,6 +3,7 @@
 #include <vector>
 #include "Gestor_de_Calificaciones.h"
 
+void MostrarPromedio(Cuatrimestre1 *gestor);
 void MostrarNotas(Cuatrimestre1 *gestor);
 void IngresarNotas(Cuatrimestre1 *gestor);
 std::vector<std::string> materia;
@@ -31,6 +32,8 @@ int main(){
                 break;
             case 2:
                 MostrarNotas(gestor);
+                std::cout << std::endl;
+                MostrarPromedio(gestor);
                 break;
             case 3:
                 std::cout << "Saliendo del programa..." << std::endl;
@@ -45,6 +48,7 @@ int main(){
             std::cout << "" << std::endl;
             std::cout << "Desea volver al menu principal (S/N): ";
             std::cin >> backChoice;
+            std::cout << std::endl;
             if (backChoice != 'S' && backChoice != 's') {
                 change = 3; 
             }
@@ -69,4 +73,9 @@ void IngresarNotas(Cuatrimestre1 *gestor){
     for (int i = 0; i < 5; i++) {
         notas[i] = gestor->GetNota(i);
     }
+}
+
+void MostrarPromedio(Cuatrimestre1 *gestor){
+    gestor->SetPromedio();
+    std::cout << "El Promedio Total del Cuatrimestre fue de: " << gestor->GetPromedio() << std::endl;
 }
