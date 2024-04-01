@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <cmath>
 #include "Gestor_de_Calificaciones.h"
 
+void MostrarPromedio(Cuatrimestre1 *gestor);
 void MostrarNotas(Cuatrimestre1 *gestor);
 void IngresarNotas(Cuatrimestre1 *gestor);
 std::vector<std::string> materia;
@@ -32,6 +32,8 @@ int main(){
                 break;
             case 2:
                 MostrarNotas(gestor);
+                std::cout << std::endl;
+                MostrarPromedio(gestor);
                 break;
             case 3:
                 std::cout << "Saliendo del programa..." << std::endl;
@@ -41,14 +43,14 @@ int main(){
                 break;
             }
 
-                // Preguntar al usuario si desea regresar al menú principal
         if (change != 3) {
             char backChoice;
             std::cout << "" << std::endl;
             std::cout << "Desea volver al menu principal (S/N): ";
             std::cin >> backChoice;
+            std::cout << std::endl;
             if (backChoice != 'S' && backChoice != 's') {
-                change = 3; // Salir del bucle si no desea volver al menú
+                change = 3; 
             }
         }
 
@@ -68,9 +70,12 @@ void MostrarNotas(Cuatrimestre1 *gestor){
 
 void IngresarNotas(Cuatrimestre1 *gestor){
     gestor->SetNotas();
-    notas[0] = gestor->GetNota(0);
-    notas[1] = gestor->GetNota(1);
-    notas[2] = gestor->GetNota(2);
-    notas[3] = gestor->GetNota(3);
-    notas[4] = gestor->GetNota(4);
+    for (int i = 0; i < 5; i++) {
+        notas[i] = gestor->GetNota(i);
+    }
+}
+
+void MostrarPromedio(Cuatrimestre1 *gestor){
+    gestor->SetPromedio();
+    std::cout << "El Promedio Total del Cuatrimestre fue de: " << gestor->GetPromedio() << std::endl;
 }
