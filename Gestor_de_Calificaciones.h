@@ -2,10 +2,19 @@
 #include <string>
 #include <vector>
 
-class Cuatrimestre1{
-    private:
+class EListException{};
+class EListOutOfRange : public EListException{};
+class Cuatrimestre2{
+    private: 
+        std::vector<std::string> arrayDeMaterias;
         std::string materia;
-        int nota;
+        float nota[4];
+        float promedio;
     public:
-        int promedio;
-} 
+        float GetNota(int);
+        float GetPromedio();
+        void SetNotas();
+        void SetMaterias(std::string, std::string, std::string, std::string, std::string);
+        void SetPromedio();
+        std::vector<std::string> GetMaterias();
+}; 

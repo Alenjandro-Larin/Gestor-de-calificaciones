@@ -1,0 +1,84 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include "Gestor_de_Calificaciones.h"
+
+void MostrarNotas(Cuatrimestre2 *gestor);
+void IngresarNotas(Cuatrimestre2 *gestor);
+void MostrarPromedio(Cuatrimestre2 *gestor);
+std::vector<std::string> materia;
+float notas[4];
+
+
+void Menu(){
+    std::cout << "Gestor de Calificaciones - Ingenieria Informatica - Cuatrimestre - 2" << std::endl;
+    std::cout << "(1) Ingresar Notas" << std::endl;
+    std::cout << "(2) Mostrar Notas" << std::endl;
+    std::cout << "(3) Salir del Programa" << std::endl;
+}
+
+int main(){
+    int change;
+    Cuatrimestre2 *gestor;
+    gestor = new Cuatrimestre2();
+    gestor->SetMaterias("Matematica 2", "Programacion 2", "Logica", "Matematica discreta", "Teconologias de la Informacion y Comunicacion");
+
+    do {
+    Menu();
+    std::cin >> change;
+        switch (change){
+            case 1:
+                IngresarNotas(gestor);
+                break;
+            case 2:
+                MostrarNotas(gestor);
+                std::cout << std::endl ; 
+                MostrarPromedio(gestor) ;             
+                break;
+            case 3:
+                std::cout << "Saliendo del programa..." << std::endl;
+                break;
+            default:
+                std::cout << "Opción no válida. Por favor, seleccione nuevamente." << std::endl;
+                break;
+            }
+
+                // Preguntar al usuario si desea regresar al menú principal
+        if (change != 3) {
+            char backChoice;
+            std::cout << "" << std::endl;
+            std::cout << "Desea volver al menu principal (S/N): ";
+            std::cin >> backChoice;
+            if (backChoice != 'S' && backChoice != 's') {
+                change = 3; // Salir del bucle si no desea volver al menú
+            }
+        }
+
+    } while (change != 3);
+
+    delete gestor;
+    return 0;
+}
+
+void MostrarNotas(Cuatrimestre2 *gestor){
+    materia = gestor->GetMaterias();
+    std::cout << "Materias del Primer Cuatrimestre: " << std::endl;
+    for (int i = 0; i < materia.size(); i++){
+        std::cout << "Materia: " << materia[i] << " ------------- " << " Nota: " << notas[i] << std::endl;
+    }
+}
+
+void IngresarNotas(Cuatrimestre2 *gestor){
+    gestor->SetNotas();
+    notas[0] = gestor->GetNota(0);
+    notas[1] = gestor->GetNota(1);
+    notas[2] = gestor->GetNota(2);
+    notas[3] = gestor->GetNota(3);
+    notas[4] = gestor->GetNota(4);
+}
+
+void MostrarPromedio(Cuatrimestre2 *gestor){
+    gestor->SetPromedio();
+    std::cout << "El promedio es: " << gestor->GetPromedio();
+}
