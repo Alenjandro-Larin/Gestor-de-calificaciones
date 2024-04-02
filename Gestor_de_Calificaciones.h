@@ -17,4 +17,19 @@ class Cuatrimestre1{
         void SetPromedio();
         void SetMaterias(std::string, std::string, std::string, std::string, std::string);
         std::vector<std::string> GetMaterias();
-}; 
+};
+
+class Cuatrimestre2{
+    private:
+        std::vector<std::string> arrayDeMaterias2;
+        std::string materiaSemestre2;
+        float nota2[4];
+        float promedioSemestre2;
+    public:
+        float GetNotaSemestre2(int);
+        float GetPromedioSemestre2();
+        void SetNotasSemestre2();
+        void SetPromedioSemestre2();
+        void SetMateriasSemestre2(std::string, std::string, std::string, std::string, std::string);
+        std::vector<std::string> GetMateriasSemestre2();
+};
