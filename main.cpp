@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <limits>
 #include "Gestor_de_Calificaciones.h"
 
 void MostrarPromedio(Cuatrimestre1 *gestor);
@@ -42,7 +43,11 @@ int main(){
     gestor2->SetMateriasSemestre2("Matematica II", "Programacion II", "Logica", "Matematica Discreta", "Tecnologias de la Informacion y Comunicacion");
     do {
     Menu();
-    std::cin >> change;
+    while (!(std::cin >> change)) {
+    std::cout << "Entrada invalida. Ingrese un numero: ";
+    std::cin.clear(); 
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+    }
         switch (change){
             case 1:
                 Menu2();
@@ -104,6 +109,7 @@ int main(){
     } while (change != 4);
 
     delete gestor;
+    delete gestor2;
     return 0;
 }
 
