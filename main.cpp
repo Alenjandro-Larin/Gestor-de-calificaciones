@@ -150,12 +150,18 @@ void IngresarNotasSemestre2(Cuatrimestre2 *gestor2){
 }
 
 void PromedioTotal(Cuatrimestre1 *gestor, Cuatrimestre2 *gestor2){
-    float promedioTotal = (gestor->GetPromedio() + gestor2->GetPromedioSemestre2())/2;
-    std::cout << "El promedio total de los 2 semestres fue de: " << promedioTotal << std::endl;
-    if (promedioTotal > 8){
-        std::cout << "Felicidades obtuviste una matricula de honor!!" << std::endl;
+
+    if (gestor->GetPromedio() == 0 || gestor2->GetPromedioSemestre2() == 0){
+        std::cout << "AVISO: No hay registro de alguno de los semestres todavia" << std::endl;
     }
-    else if (promedioTotal <= 4){
-        std::cout << "Lastimosamente has reprobado" << std::endl;
+    else{
+        float promedioTotal = (gestor->GetPromedio() + gestor2->GetPromedioSemestre2())/2;
+        std::cout << "El promedio total de los 2 semestres fue de: " << promedioTotal << std::endl;
+        if (promedioTotal > 8){
+            std::cout << "Felicidades obtuviste una matricula de honor!!" << std::endl;
+        }
+        else if (promedioTotal <= 4){
+            std::cout << "Lastimosamente has reprobado" << std::endl;
+        }
     }
 }
