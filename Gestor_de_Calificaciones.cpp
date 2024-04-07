@@ -4,7 +4,7 @@
 #include <vector>
 #include "Gestor_de_Calificaciones.h"
 
-float Cuatrimestre2::GetNota(int pos)
+float Cuatrimestre1::GetNota(int pos)
 {
     return nota[pos];
 }
@@ -62,14 +62,7 @@ void Cuatrimestre1::SetMaterias(std::string materia1, std::string materia2, std:
     arrayDeMaterias = {materia1, materia2, materia3, materia4, materia5}; 
 }
 
-void Cuatrimestre2::SetPromedio()
-{
-  promedio = (nota[0]+nota[1]+nota[2]+nota[3]+nota[4])/5;
-}
-
-
-
-std::vector<std::string> Cuatrimestre2::GetMaterias()
+std::vector<std::string> Cuatrimestre1::GetMaterias()
 {
     return arrayDeMaterias;
 }

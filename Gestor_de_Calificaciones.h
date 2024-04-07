@@ -13,7 +13,6 @@ class Cuatrimestre1{
         void SetNotas();
         void SetPromedio();
         void SetMaterias(std::string, std::string, std::string, std::string, std::string);
-        void SetPromedio();
         std::vector<std::string> GetMaterias();
 };
 
