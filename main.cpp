@@ -15,7 +15,7 @@ void IngresarNotasSemestre2(Cuatrimestre2 *gestor2);
 void PromedioTotal(Cuatrimestre1 *gestor, Cuatrimestre2 *gestor2);
 std::vector<std::string> materia;
 std::vector<std::string> materiaSegundoSemestre;
-float notas[4];
+float notas[5];
 float notas2[4];
 
 
