@@ -113,7 +113,7 @@ int main(){
     return 0;
 }
 
-void MostrarNotas(Cuatrimestre2 *gestor){
+void MostrarNotas(Cuatrimestre1 *gestor){
     materia = gestor->GetMaterias();
     std::cout << "Materias del Primer Semestre: " << std::endl;
     for (int i = 0; i < materia.size(); i++){
@@ -121,7 +121,7 @@ void MostrarNotas(Cuatrimestre2 *gestor){
     }
 }
 
-void IngresarNotas(Cuatrimestre2 *gestor){
+void IngresarNotas(Cuatrimestre1 *gestor){
     gestor->SetNotas();
     for (int i = 0; i < 5; i++) {
         notas[i] = gestor->GetNota(i);
@@ -170,9 +170,4 @@ void PromedioTotal(Cuatrimestre1 *gestor, Cuatrimestre2 *gestor2){
             std::cout << "Lastimosamente has reprobado" << std::endl;
         }
     }
-}
-
-void MostrarPromedio(Cuatrimestre2 *gestor){
-    gestor->SetPromedio();
-    std::cout << "El promedio es: " << gestor->GetPromedio();
 }
