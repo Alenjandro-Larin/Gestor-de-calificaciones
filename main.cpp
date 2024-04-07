@@ -20,7 +20,7 @@ float notas2[4];
 
 
 void Menu(){
-    std::cout << "Gestor de Calificaciones - Ingenieria Informatica" << std::endl;
+    std::cout << "Gestor de Calificaciones - Ingenieria Informatica - Cuatrimestre - 2" << std::endl;
     std::cout << "(1) Ingresar Notas" << std::endl;
     std::cout << "(2) Mostrar Notas" << std::endl;
     std::cout << "(3) Promedio Total del Curso"  << std::endl;
@@ -113,7 +113,7 @@ int main(){
     return 0;
 }
 
-void MostrarNotas(Cuatrimestre1 *gestor){
+void MostrarNotas(Cuatrimestre2 *gestor){
     materia = gestor->GetMaterias();
     std::cout << "Materias del Primer Semestre: " << std::endl;
     for (int i = 0; i < materia.size(); i++){
@@ -121,7 +121,7 @@ void MostrarNotas(Cuatrimestre1 *gestor){
     }
 }
 
-void IngresarNotas(Cuatrimestre1 *gestor){
+void IngresarNotas(Cuatrimestre2 *gestor){
     gestor->SetNotas();
     for (int i = 0; i < 5; i++) {
         notas[i] = gestor->GetNota(i);
@@ -170,4 +170,9 @@ void PromedioTotal(Cuatrimestre1 *gestor, Cuatrimestre2 *gestor2){
             std::cout << "Lastimosamente has reprobado" << std::endl;
         }
     }
+}
+
+void MostrarPromedio(Cuatrimestre2 *gestor){
+    gestor->SetPromedio();
+    std::cout << "El promedio es: " << gestor->GetPromedio();
 }
