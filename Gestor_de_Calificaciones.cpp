@@ -45,6 +45,7 @@ void Cuatrimestre1::SetNotas(){
     std::cin.clear(); 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     } 
+    //Array nota cuatrimestre 1
     nota[0] = pNota1;
     nota[1] = pNota2;
     nota[2] = pNota3;
@@ -64,6 +65,7 @@ std::vector<std::string> Cuatrimestre1::GetMaterias(){
     return arrayDeMaterias;
 }
 
+//Cuatrimestre 2
 float Cuatrimestre2::GetNotaSemestre2(int posicion){
     return nota2[posicion];
 }
@@ -73,43 +75,43 @@ float Cuatrimestre2::GetPromedioSemestre2(){
 }
 
 void Cuatrimestre2::SetNotasSemestre2(){
-    float pNota1; float pNota2; float pNota3; float pNota4; float pNota5;
+    float p2Nota1; float p2Nota2; float p2Nota3; float p2Nota4; float p2Nota5;
 
     std::cout << "Ingresa la nota de Matematica II: ";
-    while (!(std::cin >> pNota1)) {
+    while (!(std::cin >> p2Nota1)) {
     std::cout << "Entrada invalida. Ingrese un numero: ";
     std::cin.clear(); 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
     }
     std::cout << "Ingresa la nota de Programacion II: ";
-    while (!(std::cin >> pNota2)) {
+    while (!(std::cin >> p2Nota2)) {
     std::cout << "Entrada invalida. Ingrese un numero: ";
     std::cin.clear(); 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
     }
     std::cout << "Ingresa la nota de Logica: ";
-    while (!(std::cin >> pNota3)) {
+    while (!(std::cin >> p2Nota3)) {
     std::cout << "Entrada invalida. Ingrese un numero: ";
     std::cin.clear(); 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
     }
     std::cout << "Ingresa la nota de Matematica Discreta: ";
-    while (!(std::cin >> pNota4)) {
+    while (!(std::cin >> p2Nota4)) {
     std::cout << "Entrada invalida. Ingrese un numero: ";
     std::cin.clear(); 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
     }
     std::cout << "Ingresa la nota de Tecnologias de la Informacion y Comunicacion: ";
-    while (!(std::cin >> pNota5)) {
+    while (!(std::cin >> p2Nota5)) {
     std::cout << "Entrada invalida. Ingrese un numero: ";
     std::cin.clear(); 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     } 
-    nota2[0] = pNota1;
-    nota2[1] = pNota2;
-    nota2[2] = pNota3;
-    nota2[3] = pNota4;
-    nota2[4] = pNota5; 
+    nota2[0] = p2Nota1;
+    nota2[1] = p2Nota2;
+    nota2[2] = p2Nota3;
+    nota2[3] = p2Nota4;
+    nota2[4] = p2Nota5; 
 }
 
 void Cuatrimestre2::SetPromedioSemestre2(){
