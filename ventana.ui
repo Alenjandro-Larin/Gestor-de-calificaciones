@@ -78,11 +78,11 @@
     <string>...</string>
    </property>
   </widget>
-  <widget class="QLabel" name="promedio1">
+  <widget class="QLabel" name="label_promedio1">
    <property name="geometry">
     <rect>
      <x>190</x>
-     <y>230</y>
+     <y>220</y>
      <width>49</width>
      <height>16</height>
     </rect>
@@ -95,7 +95,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>230</y>
+     <y>220</y>
      <width>171</width>
      <height>16</height>
     </rect>
@@ -130,7 +130,7 @@
     <string>Lógica:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_tecnoligia">
+  <widget class="QLabel" name="label_tecnologia">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -146,7 +146,7 @@
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>410</x>
      <y>220</y>
      <width>171</width>
      <height>16</height>
@@ -349,6 +349,32 @@
    </property>
    <property name="text">
     <string>Tecnología y estructura de ordenadores:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>30</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mostrar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_promedio2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>220</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
    </property>
   </widget>
  </widget>

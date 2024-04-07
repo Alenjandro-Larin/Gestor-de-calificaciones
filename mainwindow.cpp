@@ -3,7 +3,8 @@
 #include "dialog.h"
 #include "ventana.h"
 #include "promedio.h"
-extern float nota[4];
+#include "ui_ventana.h"
+#include "ui_dialog.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -31,9 +32,9 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_mostrar_clicked()
 {
     Ventana ventana1;
+    bool i = true;
     ventana1.setModal('true');
     ventana1.exec();
-    //ui->label_matematicaI->setText(QString::number(nota[0]));
 }
 
 

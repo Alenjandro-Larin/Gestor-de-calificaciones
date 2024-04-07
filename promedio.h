@@ -15,6 +15,9 @@ public:
     explicit Promedio(QWidget *parent = nullptr);
     ~Promedio();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Promedio *ui;
 };
