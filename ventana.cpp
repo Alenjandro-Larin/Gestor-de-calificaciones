@@ -1,8 +1,5 @@
 #include "ventana.h"
 #include "ui_ventana.h"
-#include "dialog.h"
-#include "ventana.h"
-#include "promedio.h"
 extern float nota[5];
 extern float nota2[4];
 extern float promedioSemestre;
@@ -19,11 +16,6 @@ Ventana::Ventana(QWidget *parent)
 Ventana::~Ventana()
 {
     delete ui;
-}
-
-void Ventana::on_Ventana_customContextMenuRequested(const QPoint &pos)
-{
-
 }
 
 
@@ -44,18 +36,6 @@ void Ventana::on_pushButton_2_clicked()
     ui->label_tic->setText(QString::number(nota2[4]));
 
     ui->label_promedio2->setText(QString::number(promedioSemestre2/5));
-
-}
-
-
-void Ventana::on_Ventana_accepted()
-{
-
-}
-
-
-void Ventana::on_Ventana_finished(int result)
-{
 
 }
 

@@ -2,8 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "form.h"
-#include "ventana.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -28,7 +26,5 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    //Form *bform;
-    //Dialog *deialog;
 };
 #endif // MAINWINDOW_H

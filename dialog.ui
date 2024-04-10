@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>684</width>
-    <height>306</height>
+    <width>417</width>
+    <height>439</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,7 +32,7 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>300</x>
      <y>30</y>
      <width>91</width>
      <height>16</height>
@@ -46,7 +46,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>70</y>
+     <y>60</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -72,20 +72,20 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>130</y>
-     <width>281</width>
+     <y>150</y>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>Introducción a la gestión de proyectos de software:</string>
+    <string>Introducción a la gestión</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>180</y>
+     <y>250</y>
      <width>49</width>
      <height>16</height>
     </rect>
@@ -97,8 +97,8 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>210</y>
+     <x>10</x>
+     <y>300</y>
      <width>221</width>
      <height>16</height>
     </rect>
@@ -110,8 +110,8 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>70</y>
+     <x>260</x>
+     <y>60</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -123,8 +123,8 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>100</y>
+     <x>260</x>
+     <y>120</y>
      <width>101</width>
      <height>16</height>
     </rect>
@@ -136,8 +136,8 @@
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>130</y>
+     <x>260</x>
+     <y>180</y>
      <width>49</width>
      <height>16</height>
     </rect>
@@ -149,8 +149,8 @@
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>170</y>
+     <x>260</x>
+     <y>250</y>
      <width>131</width>
      <height>16</height>
     </rect>
@@ -162,8 +162,8 @@
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>210</y>
+     <x>260</x>
+     <y>300</y>
      <width>49</width>
      <height>16</height>
     </rect>
@@ -175,8 +175,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>260</y>
+     <x>310</x>
+     <y>390</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -188,8 +188,8 @@
   <widget class="QLineEdit" name="matematicaI">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>70</y>
+     <x>20</x>
+     <y>80</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -198,8 +198,8 @@
   <widget class="QLineEdit" name="programacion1">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>110</y>
+     <x>20</x>
+     <y>130</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -208,8 +208,8 @@
   <widget class="QLineEdit" name="introduccion">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>140</y>
+     <x>20</x>
+     <y>220</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -218,8 +218,8 @@
   <widget class="QLineEdit" name="fisica">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>180</y>
+     <x>20</x>
+     <y>270</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -228,8 +228,8 @@
   <widget class="QLineEdit" name="tecnologia">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>210</y>
+     <x>20</x>
+     <y>330</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -238,8 +238,8 @@
   <widget class="QLineEdit" name="matematicaII">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>70</y>
+     <x>260</x>
+     <y>80</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -251,8 +251,8 @@
   <widget class="QLineEdit" name="programacion2">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>100</y>
+     <x>260</x>
+     <y>140</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -261,8 +261,8 @@
   <widget class="QLineEdit" name="logica">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>130</y>
+     <x>260</x>
+     <y>210</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -271,8 +271,8 @@
   <widget class="QLineEdit" name="matematicadiscreta">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>170</y>
+     <x>260</x>
+     <y>270</y>
      <width>113</width>
      <height>22</height>
     </rect>
@@ -281,11 +281,24 @@
   <widget class="QLineEdit" name="tic">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>210</y>
+     <x>260</x>
+     <y>330</y>
      <width>113</width>
      <height>22</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>de proyectos de software:</string>
    </property>
   </widget>
  </widget>

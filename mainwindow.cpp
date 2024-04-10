@@ -3,8 +3,6 @@
 #include "dialog.h"
 #include "ventana.h"
 #include "promedio.h"
-#include "ui_ventana.h"
-#include "ui_dialog.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -22,8 +20,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    //deialog = new Dialog(this);
-    //deialog->show();
     Dialog deialog;
     deialog.setModal('true');
     deialog.exec();
@@ -32,7 +28,6 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_mostrar_clicked()
 {
     Ventana ventana1;
-    bool i = true;
     ventana1.setModal('true');
     ventana1.exec();
 }

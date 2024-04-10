@@ -21,7 +21,6 @@ float balance;
 
 void Dialog::on_pushButton_clicked()
 {
-    nota[4] = 0;
     QString matematica1 = ui->matematicaI->text();
     nota[0] = matematica1.toFloat();
 
