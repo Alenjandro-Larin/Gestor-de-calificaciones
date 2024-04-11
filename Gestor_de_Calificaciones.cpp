@@ -6,11 +6,11 @@
 
 float Cuatrimestre1::GetNota(int pos)
 {
-    return nota[pos];
+    return asignaturasPrimerSemestre.nota[pos];
 }
 
 float Cuatrimestre1::GetPromedio(){
-    return promedio;
+    return asignaturasPrimerSemestre.promedio;
 }
 
 void Cuatrimestre1::SetNotas(){
@@ -47,15 +47,15 @@ void Cuatrimestre1::SetNotas(){
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     } 
     //Array nota cuatrimestre 1
-    nota[0] = pNota1;
-    nota[1] = pNota2;
-    nota[2] = pNota3;
-    nota[3] = pNota4;
-    nota[4] = pNota5;  
+    asignaturasPrimerSemestre.nota[0] = pNota1;
+    asignaturasPrimerSemestre.nota[1] = pNota2;
+    asignaturasPrimerSemestre.nota[2] = pNota3;
+    asignaturasPrimerSemestre.nota[3] = pNota4;
+    asignaturasPrimerSemestre.nota[4] = pNota5;  
 }
 
 void Cuatrimestre1::SetPromedio(){
-    promedio = (nota[0] + nota[1] + nota[2] + nota[3] + nota[4])/5;
+    asignaturasPrimerSemestre.promedio = (asignaturasPrimerSemestre.nota[0] + asignaturasPrimerSemestre.nota[1] + asignaturasPrimerSemestre.nota[2] + asignaturasPrimerSemestre.nota[3] + asignaturasPrimerSemestre.nota[4])/5;
 }
 
 void Cuatrimestre1::SetMaterias(std::string materia1, std::string materia2, std::string materia3, std::string materia4, std::string materia5){
@@ -69,11 +69,11 @@ std::vector<std::string> Cuatrimestre1::GetMaterias()
 
 //Cuatrimestre 2
 float Cuatrimestre2::GetNotaSemestre2(int posicion){
-    return nota2[posicion];
+    return asignaturasSegundoSemestre.nota[posicion];
 }
 
 float Cuatrimestre2::GetPromedioSemestre2(){
-    return promedioSemestre2;
+    return asignaturasSegundoSemestre.promedio;
 }
 
 void Cuatrimestre2::SetNotasSemestre2(){
@@ -109,15 +109,15 @@ void Cuatrimestre2::SetNotasSemestre2(){
     std::cin.clear(); 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     } 
-    nota2[0] = p2Nota1;
-    nota2[1] = p2Nota2;
-    nota2[2] = p2Nota3;
-    nota2[3] = p2Nota4;
-    nota2[4] = p2Nota5; 
+    asignaturasSegundoSemestre.nota[0] = p2Nota1;
+    asignaturasSegundoSemestre.nota[1] = p2Nota2;
+    asignaturasSegundoSemestre.nota[2] = p2Nota3;
+    asignaturasSegundoSemestre.nota[3] = p2Nota4;
+    asignaturasSegundoSemestre.nota[4] = p2Nota5; 
 }
 
 void Cuatrimestre2::SetPromedioSemestre2(){
-    promedioSemestre2 = (nota2[0] + nota2[1] + nota2[2] + nota2[3] + nota2[4])/5; 
+    asignaturasSegundoSemestre.promedio = (asignaturasSegundoSemestre.nota[0] + asignaturasSegundoSemestre.nota[1] + asignaturasSegundoSemestre.nota[2] + asignaturasSegundoSemestre.nota[3] + asignaturasSegundoSemestre.nota[4])/5; 
 }
 
 void Cuatrimestre2::SetMateriasSemestre2(std::string materia1, std::string materia2, std::string materia3, std::string materia4, std::string materia5){

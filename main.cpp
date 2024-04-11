@@ -20,7 +20,7 @@ float notas2[4];
 
 
 void Menu(){
-    std::cout << "Gestor de Calificaciones - Ingenieria Informatica - Cuatrimestre - 2" << std::endl;
+    std::cout << "Gestor de Calificaciones - Ingenieria Informatica -" << std::endl;
     std::cout << "(1) Ingresar Notas" << std::endl;
     std::cout << "(2) Mostrar Notas" << std::endl;
     std::cout << "(3) Promedio Total del Curso"  << std::endl;
