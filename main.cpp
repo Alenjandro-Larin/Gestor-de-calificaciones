@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <limits>
 #include "Gestor_de_Calificaciones.h"
 
 void MostrarPromedio(Cuatrimestre1 *gestor);
@@ -15,7 +16,7 @@ void PromedioTotal(Cuatrimestre1 *gestor, Cuatrimestre2 *gestor2);
 std::vector<std::string> materia;
 std::vector<std::string> materiaSegundoSemestre;
 float notas[5];
-float notas2[4];
+float notas2[5];
 
 
 void Menu(){
