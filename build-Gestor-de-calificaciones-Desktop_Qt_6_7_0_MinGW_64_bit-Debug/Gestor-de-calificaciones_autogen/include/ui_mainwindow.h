@@ -56,7 +56,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Lobby", nullptr));
         ver->setText(QCoreApplication::translate("MainWindow", "Ver Notas", nullptr));
         salir->setText(QCoreApplication::translate("MainWindow", "Salir", nullptr));
         promedio->setText(QCoreApplication::translate("MainWindow", "Promedio total del curso", nullptr));

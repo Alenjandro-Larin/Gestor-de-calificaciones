@@ -2,6 +2,7 @@
 #define MOSTRARNOTAS_H
 
 #include <QDialog>
+#include "mainwindow.h"
 
 namespace Ui {
 class MostrarNotas;
@@ -18,8 +19,11 @@ public:
 private slots:
     void on_mostrar_clicked();
 
+    void on_salir_clicked();
+
 private:
     Ui::MostrarNotas *ui;
+    QMainWindow *mainwindow;
 };
 
 #endif // MOSTRARNOTAS_H

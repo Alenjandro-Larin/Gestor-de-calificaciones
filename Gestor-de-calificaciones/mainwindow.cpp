@@ -18,23 +18,23 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_introducir_clicked()
 {
-    IntroducirNotas introducirnotas;
-    introducirnotas.setModal('true');
-    introducirnotas.exec();
+    hide();
+    introducirnotas = new IntroducirNotas(this);
+    introducirnotas->show();
 }
 
 
 void MainWindow::on_ver_clicked()
 {
-    MostrarNotas mostrarnotas;
-    mostrarnotas.setModal('true');
-    mostrarnotas.exec();
+    hide();
+    mostrarnotas = new MostrarNotas(this);
+    mostrarnotas->show();
 }
 
 void MainWindow::on_promedio_clicked()
 {
-    MostrarPromedio mostrarpromedio;
-    mostrarpromedio.setModal('true');
-    mostrarpromedio.exec();
+    hide();
+    Mostrarpromedio = new MostrarPromedio(this);
+    Mostrarpromedio->show();
 }
 

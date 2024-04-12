@@ -48,7 +48,7 @@ public:
 
     void retranslateUi(QDialog *MostrarPromedio)
     {
-        MostrarPromedio->setWindowTitle(QCoreApplication::translate("MostrarPromedio", "Dialog", nullptr));
+        MostrarPromedio->setWindowTitle(QCoreApplication::translate("MostrarPromedio", "Promedio Total", nullptr));
         pushButton->setText(QCoreApplication::translate("MostrarPromedio", "Salir", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MostrarPromedio", "Conocer resultado", nullptr));
         promedio->setText(QString());

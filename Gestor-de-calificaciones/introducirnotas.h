@@ -2,6 +2,7 @@
 #define INTRODUCIRNOTAS_H
 
 #include <QDialog>
+#include "mainwindow.h"
 
 namespace Ui {
 class IntroducirNotas;
@@ -20,6 +21,7 @@ private slots:
 
 private:
     Ui::IntroducirNotas *ui;
+    QMainWindow *mainwindow;
 };
 
 #endif // INTRODUCIRNOTAS_H

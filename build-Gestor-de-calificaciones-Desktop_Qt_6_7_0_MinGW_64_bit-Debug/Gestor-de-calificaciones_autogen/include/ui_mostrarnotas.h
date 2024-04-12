@@ -160,7 +160,7 @@ public:
 
     void retranslateUi(QDialog *MostrarNotas)
     {
-        MostrarNotas->setWindowTitle(QCoreApplication::translate("MostrarNotas", "Dialog", nullptr));
+        MostrarNotas->setWindowTitle(QCoreApplication::translate("MostrarNotas", "Notas", nullptr));
         label_promedio2->setText(QCoreApplication::translate("MostrarNotas", "...", nullptr));
         label_8->setText(QCoreApplication::translate("MostrarNotas", "Matematica II:", nullptr));
         label_13->setText(QCoreApplication::translate("MostrarNotas", "Promedio del cuatrimestre 1:", nullptr));

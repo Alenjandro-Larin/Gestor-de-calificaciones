@@ -1,5 +1,6 @@
 #include "mostrarnotas.h"
 #include "ui_mostrarnotas.h"
+#include "mainwindow.h"
 extern float nota[5];
 extern float nota2[4];
 extern float promedioSemestre;
@@ -35,5 +36,13 @@ void MostrarNotas::on_mostrar_clicked()
     ui->label_tic->setText(QString::number(nota2[4]));
 
     ui->label_promedio2->setText(QString::number(promedioSemestre2/5));
+}
+
+
+void MostrarNotas::on_salir_clicked()
+{
+    hide();
+    mainwindow = new MainWindow(this);
+    mainwindow->show();
 }
 

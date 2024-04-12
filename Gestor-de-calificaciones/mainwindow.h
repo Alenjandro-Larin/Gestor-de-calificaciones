@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "introducirnotas.h"
+#include "mostrarnotas.h"
+#include "mostrarpromedio.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,5 +29,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QDialog *introducirnotas;
+    QDialog *mostrarnotas;
+    QDialog *Mostrarpromedio;
 };
 #endif // MAINWINDOW_H

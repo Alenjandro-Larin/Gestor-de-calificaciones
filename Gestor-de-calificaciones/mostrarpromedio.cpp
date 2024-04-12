@@ -1,5 +1,6 @@
 #include "mostrarpromedio.h"
 #include "ui_mostrarpromedio.h"
+#include "mainwindow.h"
 extern float promedioSemestre2;
 extern float balance;
 
@@ -33,5 +34,13 @@ void MostrarPromedio::on_pushButton_2_clicked()
     if (promedioTotal > 10 || promedioTotal < 0){
         ui->promedio->setText("Esa calificacion no es posible: " + QString::number(promedioTotal));
     }
+}
+
+
+void MostrarPromedio::on_pushButton_clicked()
+{
+    hide();
+    mainwindow = new MainWindow(this);
+    mainwindow->show();
 }
 

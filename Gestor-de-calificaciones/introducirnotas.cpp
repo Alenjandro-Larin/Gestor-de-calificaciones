@@ -1,5 +1,7 @@
 #include "introducirnotas.h"
 #include "ui_introducirnotas.h"
+#include "mainwindow.h"
+
 
 IntroducirNotas::IntroducirNotas(QWidget *parent)
     : QDialog(parent)
@@ -55,5 +57,9 @@ void IntroducirNotas::on_pushButton_clicked()
     nota2[4] = tic1.toFloat();
 
     promedioSemestre2 = (nota2[0] + nota2[1] + nota2[2] + nota2[3] + nota2[4]);
+
+    hide();
+    mainwindow = new MainWindow(this);
+    mainwindow->show();
 }
 
