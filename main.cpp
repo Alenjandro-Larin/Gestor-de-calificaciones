@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <limits>
 #include "Gestor_de_Calificaciones.h"
 
 void MostrarPromedio(Cuatrimestre1 *gestor);
