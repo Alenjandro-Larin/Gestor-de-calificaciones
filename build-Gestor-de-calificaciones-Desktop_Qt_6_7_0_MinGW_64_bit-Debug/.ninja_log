@@ -1,0 +1,24 @@
+# ninja log v5
+6	39	0	C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7de935deabca4c2c
+16	994	7346532557373480	Gestor-de-calificaciones_autogen/mocs_compilation.cpp	b9a829de05501216
+16	994	7346532557373480	Gestor-de-calificaciones_autogen/timestamp	b9a829de05501216
+995	7113	7346532619206292	CMakeFiles/Gestor-de-calificaciones.dir/Gestor-de-calificaciones_autogen/mocs_compilation.cpp.obj	5b6040915eacfdca
+16	994	7346532557373480	C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Gestor-de-calificaciones_autogen/timestamp	b9a829de05501216
+16	994	7346532557373480	C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Gestor-de-calificaciones_autogen/mocs_compilation.cpp	b9a829de05501216
+999	7455	7346532622578642	CMakeFiles/Gestor-de-calificaciones.dir/mainwindow.cpp.obj	2ae6dc9c6e39887a
+1091	8626	7346514285558181	CMakeFiles/Gestor-de-calificaciones.dir/main.cpp.obj	92a7d3e8202f47df
+5944	6467	7346531010186239	Gestor-de-calificaciones.exe	97e2bcb73e651c9d
+996	7671	7346532624774052	CMakeFiles/Gestor-de-calificaciones.dir/introducirnotas.cpp.obj	b1873804a547c90b
+307	5560	7346531001100739	CMakeFiles/Gestor-de-calificaciones.dir/mostrarpromedio.cpp.obj	562b1269859fc8da
+997	7515	7346532623253061	CMakeFiles/Gestor-de-calificaciones.dir/mostrarnotas.cpp.obj	99482b87891e88ce
+9	54	0	C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7de935deabca4c2c
+22	311	7346532944660373	Gestor-de-calificaciones_autogen/timestamp	b9a829de05501216
+22	311	7346532944660373	Gestor-de-calificaciones_autogen/mocs_compilation.cpp	b9a829de05501216
+22	311	7346532944660373	C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Gestor-de-calificaciones_autogen/timestamp	b9a829de05501216
+22	311	7346532944660373	C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Gestor-de-calificaciones_autogen/mocs_compilation.cpp	b9a829de05501216
+354	5467	7346532996223896	CMakeFiles/Gestor-de-calificaciones.dir/mainwindow.cpp.obj	2ae6dc9c6e39887a
+356	5532	7346532996889031	CMakeFiles/Gestor-de-calificaciones.dir/mostrarpromedio.cpp.obj	562b1269859fc8da
+350	5730	7346532998874571	CMakeFiles/Gestor-de-calificaciones.dir/mostrarnotas.cpp.obj	99482b87891e88ce
+352	6062	7346533002176002	CMakeFiles/Gestor-de-calificaciones.dir/introducirnotas.cpp.obj	b1873804a547c90b
+6062	6618	7346533007705663	Gestor-de-calificaciones.exe	97e2bcb73e651c9d
+6	38	0	C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	7de935deabca4c2c

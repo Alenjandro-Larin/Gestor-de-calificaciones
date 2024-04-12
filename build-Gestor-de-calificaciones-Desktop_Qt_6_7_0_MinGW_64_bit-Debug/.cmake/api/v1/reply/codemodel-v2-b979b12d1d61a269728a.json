@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-703e90f6490d643fe382.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Gestor-de-calificaciones",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Gestor-de-calificaciones::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Gestor-de-calificaciones-Debug-722b9ce215a87dc23cb7.json",
+					"name" : "Gestor-de-calificaciones",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Gestor-de-calificaciones_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Gestor-de-calificaciones_autogen-Debug-ef3df5f39dad3caa2232.json",
+					"name" : "Gestor-de-calificaciones_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Gestor-de-calificaciones_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Gestor-de-calificaciones_autogen_timestamp_deps-Debug-1f1ceae037a826180b25.json",
+					"name" : "Gestor-de-calificaciones_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/user/Documents/uni/programming_1/Proyecto/Gestor-de-calificaciones"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

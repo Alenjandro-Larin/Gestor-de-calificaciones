@@ -1,0 +1,9 @@
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/Gestor-de-calificaciones.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/Gestor-de-calificaciones_autogen_timestamp_deps.dir
+C:/Users/user/Documents/uni/programming_1/Proyecto/build-Gestor-de-calificaciones-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/Gestor-de-calificaciones_autogen.dir
