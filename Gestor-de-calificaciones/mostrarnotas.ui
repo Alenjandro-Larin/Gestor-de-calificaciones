@@ -22,9 +22,9 @@
   <widget class="QLabel" name="label_promedio2">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>340</y>
-     <width>49</width>
+     <x>300</x>
+     <y>360</y>
+     <width>211</width>
      <height>16</height>
     </rect>
    </property>
@@ -76,7 +76,7 @@
     <rect>
      <x>320</x>
      <y>110</y>
-     <width>49</width>
+     <width>151</width>
      <height>16</height>
     </rect>
    </property>
@@ -89,7 +89,7 @@
     <rect>
      <x>320</x>
      <y>230</y>
-     <width>49</width>
+     <width>191</width>
      <height>16</height>
     </rect>
    </property>
@@ -102,7 +102,7 @@
     <rect>
      <x>30</x>
      <y>230</y>
-     <width>49</width>
+     <width>241</width>
      <height>16</height>
     </rect>
    </property>
@@ -167,7 +167,7 @@
     <rect>
      <x>320</x>
      <y>70</y>
-     <width>49</width>
+     <width>191</width>
      <height>16</height>
     </rect>
    </property>
@@ -219,7 +219,7 @@
     <rect>
      <x>320</x>
      <y>180</y>
-     <width>49</width>
+     <width>191</width>
      <height>16</height>
     </rect>
    </property>
@@ -245,7 +245,7 @@
     <rect>
      <x>30</x>
      <y>180</y>
-     <width>49</width>
+     <width>231</width>
      <height>16</height>
     </rect>
    </property>
@@ -279,25 +279,12 @@
     <string>......................................................................</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="mostrar">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>390</y>
-     <width>75</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Mostrar</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_promedio1">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>340</y>
-     <width>49</width>
+     <x>30</x>
+     <y>360</y>
+     <width>231</width>
      <height>16</height>
     </rect>
    </property>
@@ -323,7 +310,7 @@
     <rect>
      <x>320</x>
      <y>280</y>
-     <width>49</width>
+     <width>191</width>
      <height>16</height>
     </rect>
    </property>
@@ -336,7 +323,7 @@
     <rect>
      <x>30</x>
      <y>70</y>
-     <width>49</width>
+     <width>231</width>
      <height>16</height>
     </rect>
    </property>
@@ -349,7 +336,7 @@
     <rect>
      <x>30</x>
      <y>280</y>
-     <width>49</width>
+     <width>241</width>
      <height>16</height>
     </rect>
    </property>
@@ -414,7 +401,7 @@
     <rect>
      <x>30</x>
      <y>110</y>
-     <width>49</width>
+     <width>241</width>
      <height>16</height>
     </rect>
    </property>

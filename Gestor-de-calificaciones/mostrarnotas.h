@@ -17,8 +17,6 @@ public:
     ~MostrarNotas();
 
 private slots:
-    void on_mostrar_clicked();
-
     void on_salir_clicked();
 
 private:

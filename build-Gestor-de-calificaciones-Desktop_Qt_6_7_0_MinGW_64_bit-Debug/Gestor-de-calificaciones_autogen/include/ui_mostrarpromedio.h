@@ -21,7 +21,6 @@ class Ui_MostrarPromedio
 {
 public:
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
     QLabel *promedio;
 
     void setupUi(QDialog *MostrarPromedio)
@@ -33,9 +32,6 @@ public:
         pushButton = new QPushButton(MostrarPromedio);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(210, 50, 75, 24));
-        pushButton_2 = new QPushButton(MostrarPromedio);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(20, 50, 111, 24));
         promedio = new QLabel(MostrarPromedio);
         promedio->setObjectName("promedio");
         promedio->setGeometry(QRect(20, 20, 271, 16));
@@ -50,7 +46,6 @@ public:
     {
         MostrarPromedio->setWindowTitle(QCoreApplication::translate("MostrarPromedio", "Promedio Total", nullptr));
         pushButton->setText(QCoreApplication::translate("MostrarPromedio", "Salir", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MostrarPromedio", "Conocer resultado", nullptr));
         promedio->setText(QString());
     } // retranslateUi
 

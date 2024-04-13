@@ -3,23 +3,16 @@
 #include "mainwindow.h"
 extern float promedioSemestre2;
 extern float balance;
+extern float nota[5];
+extern float nota2[4];
+float promedioTotal;
 
 MostrarPromedio::MostrarPromedio(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::MostrarPromedio)
 {
     ui->setupUi(this);
-}
 
-MostrarPromedio::~MostrarPromedio()
-{
-    delete ui;
-}
-
-float promedioTotal;
-
-void MostrarPromedio::on_pushButton_2_clicked()
-{
     promedioTotal = (((balance/5) + (promedioSemestre2/5))/2);
 
     if (promedioTotal>4){
@@ -31,11 +24,15 @@ void MostrarPromedio::on_pushButton_2_clicked()
     if (promedioTotal <= 4){
         ui->promedio->setText("Lastimosamente has reprobado con: " + QString::number(promedioTotal));
     }
-    if (promedioTotal > 10 || promedioTotal < 0){
-        ui->promedio->setText("Esa calificacion no es posible: " + QString::number(promedioTotal));
+    if (nota[0] > 10 || nota[1] > 10 || nota[2] > 10 || nota[3] > 10 || nota[5] > 10 || nota2[0] > 10 || nota2[1] > 10 || nota2[2] > 10 || nota2[3] > 10 || nota2[4] > 10){
+        ui->promedio->setText(("Hay al menos una calificación no permitida."));
     }
 }
 
+MostrarPromedio::~MostrarPromedio()
+{
+    delete ui;
+}
 
 void MostrarPromedio::on_pushButton_clicked()
 {
