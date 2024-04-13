@@ -69,7 +69,7 @@ public:
         label_13->setGeometry(QRect(30, 340, 171, 16));
         label_11 = new QLabel(MostrarNotas);
         label_11->setObjectName("label_11");
-        label_11->setGeometry(QRect(320, 200, 131, 16));
+        label_11->setGeometry(QRect(320, 210, 131, 16));
         label_programacionII = new QLabel(MostrarNotas);
         label_programacionII->setObjectName("label_programacionII");
         label_programacionII->setGeometry(QRect(320, 110, 49, 16));
@@ -84,7 +84,7 @@ public:
         label_3->setGeometry(QRect(30, 50, 81, 16));
         label_10 = new QLabel(MostrarNotas);
         label_10->setObjectName("label_10");
-        label_10->setGeometry(QRect(320, 150, 49, 16));
+        label_10->setGeometry(QRect(320, 160, 49, 16));
         label_6 = new QLabel(MostrarNotas);
         label_6->setObjectName("label_6");
         label_6->setGeometry(QRect(30, 210, 49, 16));

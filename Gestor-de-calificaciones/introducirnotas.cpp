@@ -23,38 +23,28 @@ float promedioSemestre2;
 
 void IntroducirNotas::on_pushButton_clicked()
 {
-    QString matematica1 = ui->matematicaI->text();
-    nota[0] = matematica1.toFloat();
+    nota[0] = ui->matematicaI->value();
 
-    QString programacion1 = ui->programacionI->text();
-    nota[1] = programacion1.toFloat();
+    nota[1] = ui->programacionI->value();
 
-    QString introduccion1 = ui->introduccion->text();
-    nota[2] = introduccion1.toFloat();
+    nota[2] = ui->introduccion->value();
 
-    QString fisica1 = ui->fisica->text();
-    nota[3] = fisica1.toFloat();
+    nota[3] = ui->fisica->value();
 
-    QString teo1 = ui->teo->text();
-    nota[5] = teo1.toFloat();
+    nota[5] = ui->teo->value();
 
     balance = (nota[0] + nota[1] + nota[2] + nota[3] + nota[5]);
 
 
-    QString matematica2 = ui->matematicaII->text();
-    nota2[0] = matematica2.toFloat();
+    nota2[0] = ui->matematicaII->value();
 
-    QString programacion2 = ui->programacionII->text();
-    nota2[1] = programacion2.toFloat();
+    nota2[1] = ui->programacionII->value();
 
-    QString logica1 = ui->logica->text();
-    nota2[2] = logica1.toFloat();
+    nota2[2] = ui->logica->value();
 
-    QString matematicadiscreta1 = ui->matematicadiscreta->text();
-    nota2[3] = matematicadiscreta1.toFloat();
+    nota2[3] = ui->matematicadiscreta->value();
 
-    QString tic1 = ui->tic->text();
-    nota2[4] = tic1.toFloat();
+    nota2[4] = ui->tic->value();
 
     promedioSemestre2 = (nota2[0] + nota2[1] + nota2[2] + nota2[3] + nota2[4]);
 

@@ -12,8 +12,8 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -21,18 +21,8 @@ QT_BEGIN_NAMESPACE
 class Ui_IntroducirNotas
 {
 public:
-    QLineEdit *matematicaI;
-    QLineEdit *logica;
-    QLineEdit *programacionII;
-    QLineEdit *matematicadiscreta;
-    QLineEdit *teo;
-    QLineEdit *programacionI;
-    QLineEdit *introduccion;
-    QLineEdit *matematicaII;
-    QLineEdit *fisica;
     QLabel *label;
     QPushButton *pushButton;
-    QLineEdit *tic;
     QLabel *label_8;
     QLabel *label_11;
     QLabel *label_3;
@@ -45,6 +35,16 @@ public:
     QLabel *label_7;
     QLabel *label_15;
     QLabel *label_13;
+    QDoubleSpinBox *matematicaI;
+    QDoubleSpinBox *programacionI;
+    QDoubleSpinBox *introduccion;
+    QDoubleSpinBox *fisica;
+    QDoubleSpinBox *teo;
+    QDoubleSpinBox *matematicaII;
+    QDoubleSpinBox *programacionII;
+    QDoubleSpinBox *logica;
+    QDoubleSpinBox *matematicadiscreta;
+    QDoubleSpinBox *tic;
 
     void setupUi(QDialog *IntroducirNotas)
     {
@@ -52,42 +52,12 @@ public:
             IntroducirNotas->setObjectName("IntroducirNotas");
         IntroducirNotas->resize(470, 379);
         IntroducirNotas->setMinimumSize(QSize(470, 379));
-        matematicaI = new QLineEdit(IntroducirNotas);
-        matematicaI->setObjectName("matematicaI");
-        matematicaI->setGeometry(QRect(40, 70, 113, 22));
-        logica = new QLineEdit(IntroducirNotas);
-        logica->setObjectName("logica");
-        logica->setGeometry(QRect(300, 180, 113, 22));
-        programacionII = new QLineEdit(IntroducirNotas);
-        programacionII->setObjectName("programacionII");
-        programacionII->setGeometry(QRect(300, 120, 113, 22));
-        matematicadiscreta = new QLineEdit(IntroducirNotas);
-        matematicadiscreta->setObjectName("matematicadiscreta");
-        matematicadiscreta->setGeometry(QRect(300, 240, 113, 22));
-        teo = new QLineEdit(IntroducirNotas);
-        teo->setObjectName("teo");
-        teo->setGeometry(QRect(40, 290, 113, 22));
-        programacionI = new QLineEdit(IntroducirNotas);
-        programacionI->setObjectName("programacionI");
-        programacionI->setGeometry(QRect(40, 120, 113, 22));
-        introduccion = new QLineEdit(IntroducirNotas);
-        introduccion->setObjectName("introduccion");
-        introduccion->setGeometry(QRect(40, 190, 113, 22));
-        matematicaII = new QLineEdit(IntroducirNotas);
-        matematicaII->setObjectName("matematicaII");
-        matematicaII->setGeometry(QRect(300, 70, 113, 22));
-        fisica = new QLineEdit(IntroducirNotas);
-        fisica->setObjectName("fisica");
-        fisica->setGeometry(QRect(40, 240, 113, 22));
         label = new QLabel(IntroducirNotas);
         label->setObjectName("label");
         label->setGeometry(QRect(50, 20, 91, 16));
         pushButton = new QPushButton(IntroducirNotas);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(340, 330, 91, 31));
-        tic = new QLineEdit(IntroducirNotas);
-        tic->setObjectName("tic");
-        tic->setGeometry(QRect(300, 290, 113, 22));
         label_8 = new QLabel(IntroducirNotas);
         label_8->setObjectName("label_8");
         label_8->setGeometry(QRect(300, 50, 81, 16));
@@ -124,6 +94,36 @@ public:
         label_13 = new QLabel(IntroducirNotas);
         label_13->setObjectName("label_13");
         label_13->setGeometry(QRect(40, 140, 141, 41));
+        matematicaI = new QDoubleSpinBox(IntroducirNotas);
+        matematicaI->setObjectName("matematicaI");
+        matematicaI->setGeometry(QRect(40, 70, 62, 22));
+        programacionI = new QDoubleSpinBox(IntroducirNotas);
+        programacionI->setObjectName("programacionI");
+        programacionI->setGeometry(QRect(40, 120, 62, 22));
+        introduccion = new QDoubleSpinBox(IntroducirNotas);
+        introduccion->setObjectName("introduccion");
+        introduccion->setGeometry(QRect(40, 190, 62, 22));
+        fisica = new QDoubleSpinBox(IntroducirNotas);
+        fisica->setObjectName("fisica");
+        fisica->setGeometry(QRect(40, 240, 62, 22));
+        teo = new QDoubleSpinBox(IntroducirNotas);
+        teo->setObjectName("teo");
+        teo->setGeometry(QRect(40, 300, 62, 22));
+        matematicaII = new QDoubleSpinBox(IntroducirNotas);
+        matematicaII->setObjectName("matematicaII");
+        matematicaII->setGeometry(QRect(300, 70, 62, 22));
+        programacionII = new QDoubleSpinBox(IntroducirNotas);
+        programacionII->setObjectName("programacionII");
+        programacionII->setGeometry(QRect(300, 120, 62, 22));
+        logica = new QDoubleSpinBox(IntroducirNotas);
+        logica->setObjectName("logica");
+        logica->setGeometry(QRect(300, 180, 62, 22));
+        matematicadiscreta = new QDoubleSpinBox(IntroducirNotas);
+        matematicadiscreta->setObjectName("matematicadiscreta");
+        matematicadiscreta->setGeometry(QRect(300, 240, 62, 22));
+        tic = new QDoubleSpinBox(IntroducirNotas);
+        tic->setObjectName("tic");
+        tic->setGeometry(QRect(300, 290, 62, 22));
 
         retranslateUi(IntroducirNotas);
         QObject::connect(pushButton, &QPushButton::clicked, IntroducirNotas, qOverload<>(&QDialog::close));
@@ -134,7 +134,6 @@ public:
     void retranslateUi(QDialog *IntroducirNotas)
     {
         IntroducirNotas->setWindowTitle(QCoreApplication::translate("IntroducirNotas", "Introducir Notas", nullptr));
-        matematicaII->setText(QString());
         label->setText(QCoreApplication::translate("IntroducirNotas", "Cuatrimestre 1", nullptr));
         pushButton->setText(QCoreApplication::translate("IntroducirNotas", "Listo", nullptr));
         label_8->setText(QCoreApplication::translate("IntroducirNotas", "Matematica II:", nullptr));
