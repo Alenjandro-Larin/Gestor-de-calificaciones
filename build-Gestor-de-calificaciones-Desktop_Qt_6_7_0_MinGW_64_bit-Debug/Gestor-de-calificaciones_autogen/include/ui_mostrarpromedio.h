@@ -27,14 +27,14 @@ public:
     {
         if (MostrarPromedio->objectName().isEmpty())
             MostrarPromedio->setObjectName("MostrarPromedio");
-        MostrarPromedio->resize(311, 93);
+        MostrarPromedio->resize(352, 93);
         MostrarPromedio->setMinimumSize(QSize(311, 93));
         pushButton = new QPushButton(MostrarPromedio);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(210, 50, 75, 24));
+        pushButton->setGeometry(QRect(250, 50, 75, 24));
         promedio = new QLabel(MostrarPromedio);
         promedio->setObjectName("promedio");
-        promedio->setGeometry(QRect(20, 20, 271, 16));
+        promedio->setGeometry(QRect(20, 20, 311, 16));
 
         retranslateUi(MostrarPromedio);
         QObject::connect(pushButton, &QPushButton::clicked, MostrarPromedio, qOverload<>(&QDialog::close));
