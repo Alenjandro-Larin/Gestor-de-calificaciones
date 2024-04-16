@@ -43,6 +43,7 @@ public:
 
     void SetNota(const vector<float>& NuevoNota) {
         nota = NuevoNota;
+
     }
 
     void SetPromedio(float NuevoPromedio) {
