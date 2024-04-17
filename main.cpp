@@ -25,8 +25,6 @@ void Menu2(){
 }
 
 int main(){
-    
-
     Cuatrimestre1 cuatrimestre1;
     // Suponiendo que tienes una instancia de Cuatrimestre1 llamada cuatrimestre1
     vector<string> materias = {"Matematica I", "Programacion I", "Introduccion a la Gestion de Proyectos de Software", "Fisica", "Teconologia y Estructura de Ordenadores"};
@@ -66,7 +64,7 @@ int main(){
             case 3:
                 cout << "MOSTRAR PROMEDIO" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
-                // Aquí calculas y muestras el promedio
+                    cuatrimestre1.GetPromedio();
                 break;
             case 4:
                 cout << "¿Desea salir del programa? (S/N): ";

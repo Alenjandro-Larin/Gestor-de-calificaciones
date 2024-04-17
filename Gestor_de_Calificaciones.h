@@ -7,26 +7,24 @@
 using namespace std;
 
 struct Estructura {
-    vector<float> arrayDeNotas; // Cambiado de arrayDeNota a arrayDeNotas
-    float promedio;
+    vector<float> arrayDeNotas; 
+    
 };
 
 class Cuatrimestre1 {
 private:
     vector<string> arrayDeMaterias;
-    // string materias; // No necesitas esta variable miembro
-    Estructura asignaturasPrimerSemestre; // Cambiado de TAsignatura a Estructura
+    Estructura asignaturas; 
 
 public:
     // Métodos Set
     void SetNotas();
-    void SetPromedio(); // No necesitas este método aquí si no lo estás utilizando
     void SetMaterias(const vector<string>& materias); // Cambiado el tipo de retorno y nombre del parámetro
-
     // Métodos Get
     void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
-    float GetPromedio();
     vector<string> GetMaterias();
+    void GetPromedio();
+   
 };//end of the class
 
 /*
