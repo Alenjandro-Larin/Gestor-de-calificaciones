@@ -3,6 +3,7 @@
 #include <vector>
 #include <limits>
 #include "Gestor_de_Calificaciones.h"
+
 using namespace std;
 
 int selectMenu;
@@ -34,16 +35,19 @@ int main(){
     do {
         // Solicitar selección del menú hasta que se ingrese un número entero
         do {
-         Menu();
-           if (!(cin >> selectMenu)) {
+            Menu();
+            // Verificar si se ingresó un número
+            if (!(cin >> selectMenu)) {
                 // Limpiar estado de error y vaciar búfer de entrada
                 cin.clear();
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cout << endl;
                 cout << "-------------------------------------------------------------------" << endl;
                 cout << "Dato inválido. Por favor, ingrese un número." << endl;
-                cout << "-------------------------------------------------------------------" << endl; 
-}
+                cout << "-------------------------------------------------------------------" << endl;
+            } else {
+                break; // Salir del bucle si se ingresó un número entero válido
+            }
         } while (true);
 
         // Procesar la selección del menú
@@ -52,7 +56,7 @@ int main(){
                 cout << endl;
                 cout << "INGRESAR NOTAS" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
-               
+                    cuatrimestre1.SetNotas();
                 break;
             case 2:
                 cout << "MOSTRAR NOTAS" << endl;
@@ -84,8 +88,9 @@ int main(){
         cout << endl;
 
     } while (respuesta == 'S' || respuesta == 's');
-return 0;
-} 
+
+    return 0;
+}
 
 /*
  void MostrarNotas(Cuatrimestre1 *gestor){
