@@ -26,8 +26,17 @@ vector<string> Cuatrimestre1::GetMaterias() {
     return arrayDeMaterias;
 }
 
-float Cuatrimestre1::GetNota() {
-    
+void Cuatrimestre1::GetNotas() {
+    // Verificar si el array de notas está vacío
+    if (asignaturasPrimerSemestre.arrayDeNotas.empty()) {
+        cout << "No hay notas ingresadas." << endl;
+        return;
+    }
+
+    // Mostrar las notas
+    for (size_t i = 0; i < arrayDeMaterias.size(); i++) {
+        cout << "La nota de " << arrayDeMaterias[i] << " es: " << asignaturasPrimerSemestre.arrayDeNotas[i] << endl;
+    }
 }
 
 

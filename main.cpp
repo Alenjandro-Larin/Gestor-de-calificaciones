@@ -61,7 +61,7 @@ int main(){
             case 2:
                 cout << "MOSTRAR NOTAS" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
-                
+                    cuatrimestre1.GetNotas();
                 break;
             case 3:
                 cout << "MOSTRAR PROMEDIO" << endl;

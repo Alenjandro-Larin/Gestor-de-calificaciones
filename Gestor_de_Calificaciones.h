@@ -24,7 +24,7 @@ public:
     void SetMaterias(const vector<string>& materias); // Cambiado el tipo de retorno y nombre del parámetro
 
     // Métodos Get
-    float GetNota(int index); // Cambiado el tipo de retorno y agregado el parámetro index
+    void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
     float GetPromedio();
     vector<string> GetMaterias();
 };//end of the class
