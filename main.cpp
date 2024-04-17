@@ -5,16 +5,17 @@
 #include "Gestor_de_Calificaciones.h"
 using namespace std;
 
+int selectMenu;
+char respuesta;
 void Menu(){
-    cout << "Gestor de Calificaciones - Ingenieria Informatica -" << endl;
-    cout << "(1) Ingresar Notas" << endl;
-    cout << "(2) Mostrar Notas" << endl;
-    cout << "(3) Promedio Total del Curso"  << endl;
-    cout << "(4) Salir del Programa" << endl;
-    while (!(cin >> change)) {
-    cout << "Entrada invalida. Ingrese un numero: ";
-    cin.clear(); 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
+      cout << "1. Ingresar notas." << endl;
+            cout << "2. Mostrar notas." << endl;
+            cout << "3. Mostrar promedio." << endl;
+            cout << "4. Salir." << endl;
+            cout << endl;
+            cout << "Ingrese opción: ";
+            // Verificar si se ingresó un número
+          
 }
 
 void Menu2(){
@@ -23,75 +24,67 @@ void Menu2(){
 }
 
 int main(){
-    int change;
-    int change2;
+    
+
     Cuatrimestre1 cuatrimestre1;
     // Suponiendo que tienes una instancia de Cuatrimestre1 llamada cuatrimestre1
     vector<string> materias = {"Matematica I", "Programacion I", "Introduccion a la Gestion de Proyectos de Software", "Fisica", "Teconologia y Estructura de Ordenadores"};
     cuatrimestre1.SetMaterias(materias);
 
     do {
-    Menu();
-    }
-        switch (change){
+        // Solicitar selección del menú hasta que se ingrese un número entero
+        do {
+         Menu();
+           if (!(cin >> selectMenu)) {
+                // Limpiar estado de error y vaciar búfer de entrada
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cout << endl;
+                cout << "-------------------------------------------------------------------" << endl;
+                cout << "Dato inválido. Por favor, ingrese un número." << endl;
+                cout << "-------------------------------------------------------------------" << endl; 
+}
+        } while (true);
+
+        // Procesar la selección del menú
+        switch (selectMenu) {
             case 1:
-                Menu2();
-            cin >> change2;
-            change2 = tolower(change2);
-                switch (change2)
-                {
-                case 'a':
-                    cuatrimestre1.SetNotas();
-                    break;
-                case 'b':
-     
-                    break;
-                default:
-                    break;
-                }
+                cout << endl;
+                cout << "INGRESAR NOTAS" << endl;
+                cout << "-------------------------------------------------------------------" << endl;
+               
                 break;
             case 2:
-                Menu2();
-            cin >> change2;
-            change2 = tolower(change2);
-                switch (change2)
-                {
-                case 'a':
-                    // MostrarNotas(gestor);
-                    // cout << endl;
-                    // MostrarPromedio(gestor);
-                    break;
-                case 'b':
-                default:
-                    break;
-                }
+                cout << "MOSTRAR NOTAS" << endl;
+                cout << "-------------------------------------------------------------------" << endl;
+                
                 break;
             case 3:
-                // PromedioTotal(gestor, gestor2);
+                cout << "MOSTRAR PROMEDIO" << endl;
+                cout << "-------------------------------------------------------------------" << endl;
+                // Aquí calculas y muestras el promedio
                 break;
             case 4:
-                cout << "Saliendo del programa..." << endl;
+                cout << "¿Desea salir del programa? (S/N): ";
+                cin >> respuesta;
+                if (respuesta == 'S' || respuesta == 's') {
+                    cout << endl;
+                    cout << "Saliendo del programa..." << endl;
+                    return 0;
+                }
                 break;
             default:
-                cout << "Opcion no valida. Por favor, seleccione nuevamente." << endl;
+                cout << "La opción ingresada no es válida." << endl;
                 break;
-            }
-
-        if (change != 4) {
-            char backChoice;
-            cout << "" << endl;
-            cout << "Desea volver al menu principal (S/N): ";
-            cin >> backChoice;
-            cout << endl;
-            if (backChoice != 'S' && backChoice != 's') {
-                change = 4; 
-            }
         }
 
-    } while (change != 4);
+        // Preguntar al usuario si desea volver al menú
+        cout << "¿Desea volver al menú? (S/N): ";
+        cin >> respuesta;
+        cout << endl;
 
-
-    return 0;
+    } while (respuesta == 'S' || respuesta == 's');
+return 0;
 } 
 
 /*
