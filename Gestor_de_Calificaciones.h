@@ -1,52 +1,43 @@
+#pragma once // Directiva de preprocesador para evitar la inclusión múltiple del archivo de encabezado
+
 #include <iostream>
-#include<vector>
+#include <string>
+#include <vector>
+
 using namespace std;
-class Cuatrimestre2 {
+
+struct Estructura {
+    vector<float> arrayDeNotas; 
+    
+};
+
+class Cuatrimestre1 {
 private:
-    vector<string> ArrayDeMaterias;
-    string materia;
-    vector<float> nota;
-    float promedio;
+    vector<string> arrayDeMaterias;
+    Estructura asignaturas; 
 
 public:
-    // Métodos get
-    string GetMateria(int index) const {
-        if (index >= 0 && index < ArrayDeMaterias.size()) {
-            return ArrayDeMaterias[index];
-        } else {
-            cout << "Índice fuera de rango." << endl;
-            return ""; // o podrías lanzar una excepción
-        }
-    }
+    // Métodos Set
+    void SetNotas();
+    void SetMaterias(const vector<string>& materias); // Cambiado el tipo de retorno y nombre del parámetro
+    // Métodos Get
+    void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
+    vector<string> GetMaterias();
+    void GetPromedio();
+   
+};//end of the class
 
-    string GetMateria() const {
-        return materia;
-    }
-
-    vector<float> GetNota() const {
-        return nota;
-    }
-
-    float GetPromedio() const {
-        return promedio;
-    }
-
-    // Método set para establecer todo el vector de materias
-    void SetArrayDeMaterias(const vector<string>& NuevoArrayDeMaterias) {
-        ArrayDeMaterias = NuevoArrayDeMaterias;
-    }
-
-    // Método set para establecer una sola materia
-    void SetMateria(string NuevoMateria) {
-        materia = NuevoMateria;
-    }
-
-    void SetNota(const vector<float>& NuevoNota) {
-        nota = NuevoNota;
-
-    }
-
-    void SetPromedio(float NuevoPromedio) {
-        promedio = NuevoPromedio;
-    }
-};
+/*
+class Cuatrimestre2{
+    private:
+        vector<string> arrayDeMaterias2;
+        string materias;
+        TAsignatura asignaturasSegundoSemestre;
+    public:
+        float GetNotaSemestre2(int);
+        float GetPromedioSemestre2();
+        void SetNotasSemestre2();
+        void SetPromedioSemestre2();
+        void SetMateriasSemestre2(string, string, string, string, string);
+        vector<string> GetMateriasSemestre2();
+};*/

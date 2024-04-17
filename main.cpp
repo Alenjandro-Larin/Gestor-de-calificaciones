@@ -1,31 +1,38 @@
 #include <iostream>
 #include <vector>
-#include <string>
-#include <limits> // Para utilizar numeric_limits
+#include <limits>
 #include "Gestor_de_Calificaciones.h"
 
 using namespace std;
 
-int main() {
-    // Crear una instancia de Cuatrimestre2
-    Cuatrimestre2 cuatrimestre2;
-    int selectMenu;
-    char respuesta;
-    float nota;
-    // Definir un vector de arrayMaterias
-    vector<string> arrayMaterias = {"Matemáticas", "Ciencias Fisicas", "Logica", "Programacion", "TIC"};
-    // Definir un vector de arrayNotas
-    vector<float> arrayNotas;
-
-    do {
-        // Solicitar selección del menú hasta que se ingrese un número entero
-        do {
-            cout << "1. Ingresar notas." << endl;
+int selectMenu;
+char respuesta;
+void Menu(){
+      cout << "1. Ingresar notas." << endl;
             cout << "2. Mostrar notas." << endl;
             cout << "3. Mostrar promedio." << endl;
             cout << "4. Salir." << endl;
             cout << endl;
             cout << "Ingrese opción: ";
+            // Verificar si se ingresó un número
+          
+}
+
+void Menu2(){
+    cout << "(A) Cuatrimestre 1" << endl;
+    cout << "(B) Cuatrimestre 2" << endl;
+}
+
+int main(){
+    Cuatrimestre1 cuatrimestre1;
+    // Suponiendo que tienes una instancia de Cuatrimestre1 llamada cuatrimestre1
+    vector<string> materias = {"Matematica I", "Programacion I", "Introduccion a la Gestion de Proyectos de Software", "Fisica", "Teconologia y Estructura de Ordenadores"};
+    cuatrimestre1.SetMaterias(materias);
+
+    do {
+        // Solicitar selección del menú hasta que se ingrese un número entero
+        do {
+            Menu();
             // Verificar si se ingresó un número
             if (!(cin >> selectMenu)) {
                 // Limpiar estado de error y vaciar búfer de entrada
@@ -46,33 +53,17 @@ int main() {
                 cout << endl;
                 cout << "INGRESAR NOTAS" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
-                for (size_t i = 0; i < arrayMaterias.size(); i++) {
-                    // Validar que la entrada sea un número
-                    while (true) {
-                        cout << "Ingrese nota de " << arrayMaterias[i] << ": ";
-                        if (cin >> nota) {
-                            arrayNotas.push_back(nota);
-                            break; // Salir del bucle si se ingresó un número válido
-                        } else {
-                            // Limpiar estado de error y vaciar búfer de entrada
-                            cin.clear();
-                            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                            cout << "Dato inválido. Por favor, ingrese un número." << endl;
-                        }
-                    }
-                }
+                    cuatrimestre1.SetNotas();
                 break;
             case 2:
                 cout << "MOSTRAR NOTAS" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
-                for (size_t i = 0; i < arrayMaterias.size(); i++) {
-                    cout << "Nota de " << arrayMaterias[i] << ": " << arrayNotas[i] << endl;
-                }
+                    cuatrimestre1.GetNotas();
                 break;
             case 3:
                 cout << "MOSTRAR PROMEDIO" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
-                // Aquí calculas y muestras el promedio
+                    cuatrimestre1.GetPromedio();
                 break;
             case 4:
                 cout << "¿Desea salir del programa? (S/N): ";
@@ -97,3 +88,56 @@ int main() {
 
     return 0;
 }
+
+/*
+ void MostrarNotas(Cuatrimestre1 *gestor){
+     materia = gestor->GetMaterias();
+     cout << "Materias del Primer Semestre: " << endl;
+     for (int i = 0; i < materia.size(); i++){
+         cout << "Materia: " << materia[i] << " ------------- " << " Nota: " << notas[i] << endl;
+     }
+ }
+ void IngresarNotas(Cuatrimestre1 *gestor){
+     gestor->SetNotas();
+     for (int i = 0; i < 5; i++) {
+         notas[i] = gestor->GetNota(i);
+     }
+ }
+ void MostrarPromedio(Cuatrimestre1 *gestor){
+     gestor->SetPromedio();
+     cout << "El Promedio Total del Semestre fue de: " << gestor->GetPromedio() << endl;
+ }
+ void MostrarPromedioSemestre2(Cuatrimestre2 *gestor2){
+     gestor2->SetPromedioSemestre2();
+     cout << "El Promedio Total del Semestre fue de: " << gestor2->GetPromedioSemestre2() << endl;
+ 
+ }
+ void MostrarNotasSemestre2(Cuatrimestre2 *gestor2)
+ {
+     materiaSegundoSemestre = gestor2->GetMateriasSemestre2(); 
+     cout << "Materias del Segundo Semestre: " << endl;
+     for (int i = 0; i < materiaSegundoSemestre.size(); i++){
+         cout << "Materia: " << materiaSegundoSemestre[i] << " ------------- " << " Nota: " << notas2[i] << endl;
+     }
+ }
+ void IngresarNotasSemestre2(Cuatrimestre2 *gestor2){
+     gestor2->SetNotasSemestre2();
+     for (int i = 0; i < 5; i++){
+         notas2[i] = gestor2->GetNotaSemestre2(i);
+     }
+ }
+ void PromedioTotal(Cuatrimestre1 *gestor, Cuatrimestre2 *gestor2){
+     if (gestor->GetPromedio() == 0 || gestor2->GetPromedioSemestre2() == 0){
+         cout << "AVISO: No hay registro de alguno de los semestres todavia" << endl;
+     }
+     else{
+         float promedioTotal = (gestor->GetPromedio() + gestor2->GetPromedioSemestre2())/2;
+         cout << "El promedio total de los 2 semestres fue de: " << promedioTotal << endl;
+         if (promedioTotal > 8){
+             cout << "Felicidades obtuviste una matricula de honor!!" << endl;
+         }
+         else if (promedioTotal <= 4){
+             cout << "Lastimosamente has reprobado" << endl;
+         }
+     }
+ }*/
