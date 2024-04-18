@@ -16,7 +16,7 @@ typedef struct Estructura TAsignatura;
 class Cuatrimestre1 {
 private:
     vector<string> arrayDeMaterias;
-    TAsignatura asignaturaPrimerSemestre;
+    TAsignatura asignaturasPrimerSemestre;
 
 public:
     // Métodos Set
@@ -32,7 +32,7 @@ class Cuatrimestre2 {
 private:
     vector<string> arrayDeMaterias;
     Estructura asignaturas; 
-    TAsignatura asignaturaSegundoSemestre;
+    TAsignatura asignaturasSegundoSemestre;
 
 public:
     // Métodos Set
