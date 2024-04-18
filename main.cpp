@@ -91,7 +91,7 @@ int main() {
             case 3:
                 cout << "MOSTRAR PROMEDIO" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
-                cuatrimestre1.GetPromedio();
+                cuatrimestre1.SetPromedio();
                 break;
             case 4:
                 cout << "¿Desea salir del programa? (S/N): ";

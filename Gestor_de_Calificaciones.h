@@ -7,7 +7,7 @@
 using namespace std;
 
 struct Estructura {
-    vector<float> arrayDeNotas; 
+    vector<float> arrayDeNotas;
     
 };
 typedef struct Estructura TAsignatura;
@@ -25,7 +25,7 @@ public:
     // Métodos Get
     void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
     vector<string> GetMaterias();
-    void GetPromedio();
+    void SetPromedio();
    
 };
 class Cuatrimestre2 {
@@ -41,7 +41,7 @@ public:
     // Métodos Get
     void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
     vector<string> GetMaterias();
-    void GetPromedio();
+    void SetPromedio();
    
 };
 

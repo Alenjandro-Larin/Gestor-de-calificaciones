@@ -2,6 +2,7 @@
 #include <string>
 #include <limits>
 #include <vector>
+#include <cmath>
 #include "Gestor_de_Calificaciones.h" 
 using namespace std;
 
@@ -39,14 +40,15 @@ void Cuatrimestre2::GetNotas() {
     }
 }
 
-void  Cuatrimestre2::GetPromedio(){
+void  Cuatrimestre2::SetPromedio(){
     float promedio;
 
      for (int i = 0; i < asignaturasSegundoSemestre.arrayDeNotas.size(); ++i) {
+        // promedio += asignaturasPrimerSemestre.arrayDeNotas[i];
+        // promedio/=5;
+        asignaturasSegundoSemestre.arrayDeNotas[i] = asignaturasSegundoSemestre.arrayDeNotas[i]/5;
         promedio += asignaturasSegundoSemestre.arrayDeNotas[i];
-        promedio/=5;
     }
-
     // Mostrar el promedio
-    cout << "El promedio del cuatrimestre es: " << promedio << endl;
+    cout << "El promedio del cuatrimestre es: " << round(promedio * 100) / 100 << endl;
 }
