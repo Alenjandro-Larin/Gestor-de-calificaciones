@@ -8,6 +8,9 @@ using namespace std;
 int selectMenu;
 char respuesta;
 
+Cuatrimestre1 cuatrimestre1;
+Cuatrimestre2 cuatrimestre2;
+
 void Menu() {
     cout << "1. Ingresar notas." << endl;
     cout << "2. Mostrar notas." << endl;
@@ -22,10 +25,13 @@ void Menu2() {
     cout << "(B) Cuatrimestre 2" << endl;
 }
 
-int main() {
-    Cuatrimestre1 cuatrimestre1;
-    Cuatrimestre2 cuatrimestre2;
+void PromedioTotal(){
+    cuatrimestre1.GetPromedio();
+    cuatrimestre2.GetPromedio();
+    cout << "Promedio Total: " << (cuatrimestre1.GetPromedio() + cuatrimestre2.GetPromedio()) / 2 << endl;
+}
 
+int main() {
     // Suponiendo que tienes una instancia de Cuatrimestre1 llamada cuatrimestre1
     vector<string> materiasCuatrimestre1 = {"Matematica I", "Programacion I", "Introduccion a la Gestion de Proyectos de Software", "Fisica", "Teconologia y Estructura de Ordenadores"};
     vector<string> materiasCuatrimestre2 = {"Matematica II", "Programacion II", "Logica", "Matematica Discreta", "Tecnologias de la Informacion y Comunicacion"};
@@ -91,7 +97,13 @@ int main() {
             case 3:
                 cout << "MOSTRAR PROMEDIO" << endl;
                 cout << "-------------------------------------------------------------------" << endl;
+                cout << "Cuatrimestre 1: ";
                 cuatrimestre1.SetPromedio();
+                cout << "Cuatrimestre 2: ";
+                cuatrimestre2.SetPromedio();
+                cout << endl;
+                cout << "Promedio del Año: ";
+                PromedioTotal();
                 break;
             case 4:
                 cout << "¿Desea salir del programa? (S/N): ";

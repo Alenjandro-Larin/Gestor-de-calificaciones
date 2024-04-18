@@ -8,6 +8,7 @@ using namespace std;
 
 struct Estructura {
     vector<float> arrayDeNotas;
+    float promedio;
     
 };
 typedef struct Estructura TAsignatura;
@@ -26,6 +27,7 @@ public:
     void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
     vector<string> GetMaterias();
     void SetPromedio();
+    float GetPromedio();
    
 };
 class Cuatrimestre2 {
@@ -42,24 +44,6 @@ public:
     void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
     vector<string> GetMaterias();
     void SetPromedio();
+    float GetPromedio();
    
 };
-
-
-
-//end of the class
-
-/*
-class Cuatrimestre2{
-    private:
-        vector<string> arrayDeMaterias2;
-        string materias;
-        TAsignatura asignaturasSegundoSemestre;
-    public:
-        float GetNotaSemestre2(int);
-        float GetPromedioSemestre2();
-        void SetNotasSemestre2();
-        void SetPromedioSemestre2();
-        void SetMateriasSemestre2(string, string, string, string, string);
-        vector<string> GetMateriasSemestre2();
-};*/

@@ -41,14 +41,18 @@ void Cuatrimestre2::GetNotas() {
 }
 
 void  Cuatrimestre2::SetPromedio(){
-    float promedio;
+    float promedio = 0.0f;
 
      for (int i = 0; i < asignaturasSegundoSemestre.arrayDeNotas.size(); ++i) {
-        // promedio += asignaturasPrimerSemestre.arrayDeNotas[i];
-        // promedio/=5;
-        asignaturasSegundoSemestre.arrayDeNotas[i] = asignaturasSegundoSemestre.arrayDeNotas[i]/5;
-        promedio += asignaturasSegundoSemestre.arrayDeNotas[i];
+        asignaturasSegundoSemestre.promedio += asignaturasSegundoSemestre.arrayDeNotas[i];
     }
+
+    asignaturasSegundoSemestre.promedio /= asignaturasSegundoSemestre.arrayDeNotas.size();
+
     // Mostrar el promedio
-    cout << "El promedio del cuatrimestre es: " << round(promedio * 100) / 100 << endl;
+    cout << "El promedio del cuatrimestre es: " << round(asignaturasSegundoSemestre.promedio * 100) / 100 << endl;
+}
+
+float Cuatrimestre2::GetPromedio(){
+    return asignaturasSegundoSemestre.promedio; 
 }
