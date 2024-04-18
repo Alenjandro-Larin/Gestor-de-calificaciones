@@ -25,9 +25,12 @@ void Menu2(){
 
 int main(){
     Cuatrimestre1 cuatrimestre1;
+    Cuatrimestre2 cuatrimestre2
     // Suponiendo que tienes una instancia de Cuatrimestre1 llamada cuatrimestre1
-    vector<string> materias = {"Matematica I", "Programacion I", "Introduccion a la Gestion de Proyectos de Software", "Fisica", "Teconologia y Estructura de Ordenadores"};
-    cuatrimestre1.SetMaterias(materias);
+    vector<string> materiasCuatrimestre1 = {"Matematica I", "Programacion I", "Introduccion a la Gestion de Proyectos de Software", "Fisica", "Teconologia y Estructura de Ordenadores"};
+    vector<string> materiasCuatrimestre2 = {"Matematica II", "Programacion II", "Logica", "Matematica Discreta", "Tecnologias de la Informacion y Comunicacion"};
+    cuatrimestre1.SetMaterias(materiasCuatrimestre1);
+    cuatrimestre2.SetMaterias(materiasCuatrimestre2);
 
     do {
         // Solicitar selección del menú hasta que se ingrese un número entero
