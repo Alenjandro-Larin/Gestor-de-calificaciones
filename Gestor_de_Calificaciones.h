@@ -23,7 +23,7 @@ public:
     // Métodos Get
     void GetNotas(); // Cambiado el tipo de retorno y agregado el parámetro index
     vector<string> GetMaterias();
-    void GetPromedio();
+    void SetPromedio();
    
 };//end of the class
 
