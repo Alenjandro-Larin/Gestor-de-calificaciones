@@ -14,7 +14,7 @@
 
 ---
 # Agradecimientos
-Agradecemos a nuestro docente Lazaro Hernandez. Por los conocimientos que nos ah brindado para la presentacion de este proyecto.
+Agradecemos a nuestro docente Lazaro Hernandez. Por los conocimientos que nos ha brindado para la presentacion de este proyecto.
 
 
 ```C++
